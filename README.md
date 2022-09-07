@@ -1,1 +1,1 @@
-A simple website which convert english language to minion language. Have fun!!
+A dynamic app which convert English language to Minion language. Have fun!!
