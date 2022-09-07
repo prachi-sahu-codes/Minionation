@@ -4,9 +4,204 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <title>Minion language</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-family: "Caveat", cursive;
+        line-height: 1;
+        color: #181818;
+
+        /* background-image: url(m3.jpg);
+        background-repeat: no-repeat, repeat;
+        background-size: cover; */
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fae04e;
+        padding: 1rem 2rem;
+      }
+
+      .header-title {
+        text-shadow: 1px 1px #dadada;
+        /* text-align: center; */
+        font-size: 3rem;
+      }
+      .header-logo {
+        width: 4rem;
+      }
+
+      .lang-trans {
+        margin: 4rem;
+      }
+
+      textarea {
+        height: 15rem;
+        width: 70%;
+        font-size: 3.5rem;
+        display: block;
+        margin: 3rem auto;
+        padding: 3rem;
+        font-family: inherit;
+        font-weight: 500;
+      }
+
+      #btn-translate {
+        font-family: inherit;
+        display: block;
+        margin: 2.5rem auto;
+        padding: 1.5rem 3rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: #fae04e;
+        box-shadow: 3px 3px #55491067;
+      }
+
+      #output {
+        border: 1px solid #000;
+        height: 15rem;
+        width: 70%;
+        font-size: 3.5rem;
+        font-weight: 500;
+        display: block;
+        margin: 3rem auto;
+        padding: 3rem;
+      }
+
+      .section-header {
+        display: flex;
+        margin: 2rem;
+      }
+      .header-img {
+        width: 50%;
+        display: block;
+        margin: auto;
+      }
+      .header-description {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 3.1rem;
+        letter-spacing: 0.15rem;
+        padding: 4rem 0;
+        padding-right: 5rem;
+        margin: auto;
+      }
+
+      .section-start {
+        padding: 2rem;
+        font-weight: 500;
+        font-size: 5rem;
+        display: block;
+        text-align: center;
+      }
+
+      .output-details {
+        font-size: 2.3rem;
+        text-align: center;
+        font-weight: 500;
+        padding: 1rem;
+      }
+
+      footer {
+        width: 100%;
+        /* position: absolute;
+        bottom: 0; */
+        background-color: #fae04e;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 2rem 0;
+      }
+      a {
+        color: #181818;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 3rem;
+      }
+      .footer-name {
+        font-size: 2rem;
+        padding: 1rem 1rem 0 1rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>BaNana talk</h1>
+    <header>
+      <h1 class="header-title">BaNana talk</h1>
+
+      <a href="#scroll">
+        <img class="header-logo" src="minion-logo.png" alt="minion-logo" />
+      </a>
+    </header>
+
+    <section class="section-header">
+      <img class="header-img" src="minions-9674.png" alt="minion image" />
+      <div class="header-description">
+        <b>Minionese</b>, or often referred as <b>Minion Language</b> or
+        <b>Banana Language</b>, is a constructed language used by the Minions.
+        Convert your English words to Minion language. This language is spoken
+        by the minions in <b>Despicable Me</b>.
+      </div>
+    </section>
+
+    <section class="lang-trans">
+      <div class="section-start" id="scroll">
+        So minions fans lets get started !!!
+      </div>
+      <textarea
+        id="txt-input"
+        placeholder="Type your english sentence in here and we will translate it into banana language"
+      ></textarea>
+      <button id="btn-translate">Translate to Minionese</button>
+
+      <div class="output-details">Output will come here 👇</div>
+      <div id="output"></div>
+    </section>
+    <footer>
+      <div>
+        <a href="https://github.com/prachi-sahu-codes" target="_blank">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+
+        <a href="https://twitter.com/sahuprachi637">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/prachi-sahu-96b228200/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:prachisahu998@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <div class="footer-name">Made by Prachi</div>
+      </div>
+    </footer>
+    <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
