@@ -121,7 +121,8 @@
         text-align: center;
       }
 
-      .output-details {
+      .output-details,
+      .error-text {
         font-size: 2.3rem;
         text-align: center;
         font-weight: 500;
@@ -147,6 +148,19 @@
       .footer-name {
         font-size: 2rem;
         padding: 1rem 1rem 0 1rem;
+      }
+
+      html {
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 0; /* Remove scrollbar space */
+        background: transparent; /* Optional: just make scrollbar invisible */
+      }
+      /* Optional: show position indicator in red */
+      ::-webkit-scrollbar-thumb {
+        background: #ff0000;
       }
     </style>
   </head>
@@ -180,6 +194,7 @@
       <button id="btn-translate">Translate to Minionese</button>
 
       <div class="output-details">Translation will come here 👇</div>
+      <div class="error-text"></div>
       <div id="output"></div>
     </section>
     <footer>
