@@ -32,11 +32,6 @@ function clickHandler() {
       outputDiv.innerText = translatedText;
     })
     .catch(errorHandler);
-  // .catch((error) => {
-  //   errorText.innerText =
-  //     "Hey! something is wrong with the server!! Can you please try again later";
-  //   errorText.style.color = "red";
-  // });
 }
 
 btnTranslate.addEventListener("click", clickHandler);
